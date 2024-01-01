@@ -266,9 +266,10 @@ Would have space complexity of `O(1)` since you would use a constant amount of m
 ### Dropping the non-dominant terms and constants
 
 If the number of steps we get is something like:
-- `O(N^2 + N) -> O(N^2)`
-- `O(N + log N) -> O(N)`
-- `O(2^N + N^100) -> O(2^n)`
+- `O(N^2 + N)` -> `O(N^2)`
+- `O(N + log N)` -> `O(N)`
+- `O(2^N + N^100)` -> `O(2^n)`
+- `O(N + P) where P < N/2` -> `O(N)` since `N` dominates `P`
 
 This is because we only care about the scaling of the algorithm tends to (hence 'asymptotic runtime').
 
