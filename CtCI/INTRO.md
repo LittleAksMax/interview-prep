@@ -222,6 +222,70 @@ Try to sprinkle in successes: awards/promotions/being recruited by ex-coworker/l
 
 ## Big O
 
+Big O notation is used to describe algorithm efficiency. It's more a measure of how well it scales as the input increases in size, rather than the actual speed of an algorithm -- which could be dependent on a handful of factors, e.g., hardware.
+
+### Big O vs Big Theta vs Big Omega
+
+Worst case -- **O** describes *asymptotic runtime* -- what does the number of steps tend to? It is an upper bound on runtime. Meaning if you have something like a linear search, it is `O(N)` with N being the number of elements in the collection being searched. Likewise, the linear search is also `O(N^2)`, `O(N^3)` and any other runtime slower than and including `O(N)`.
+
+Best case -- If **O** describes an upper bound on computation time **Ω** describes the equivalent concept for a lower bound. For the same linear search example, it's `Ω(1)` since the runtime will never be faster than a runtime of 1.
+
+Expected case -- **θ** describes the tight bound on runtime. For the linear search example its `θ(N)` since the runtime of the average case also scales linearly with input size.
+
+### Space complexity
+
+How does the amount of required memory scale with the input size?
+
+A factorial algorithm defined as:
+
+```java
+int fact(int n) {
+  if (n <= 0) {
+    return 1;
+  }
+  return n * fact(n - 1);
+}
+```
+
+Would have a space complexity of `O(n)` since for any input `n`  you would have to make `n` calls to the `fact` function which occupy memory on the stack.
+
+However, the following factorial algorithm:
+
+```java
+int fact(int n) {
+  int prod = 1;
+  for (int i = 1; i < n; i++) {
+    prod *= i;
+  }
+  return prod;
+}
+```
+
+Would have space complexity of `O(1)` since you would use a constant amount of memory for any input `n`.
+
+### Dropping the non-dominant terms and constants
+
+If the number of steps we get is something like:
+- `O(N^2 + N) -> O(N^2)`
+- `O(N + log N) -> O(N)`
+- `O(2^N + N^100) -> O(2^n)`
+
+This is because we only care about the scaling of the algorithm tends to (hence 'asymptotic runtime').
+
+You can't reduce runtimes that depend on multiple variables: e.g., `O(A^2 + B)` can't be reduced.
+
+### Amortized Time
+
+What would be the time complexity of appending an element to a statically implemented list data structure?
+- Usually it's `O(1)` to do the insertion
+- What if we are at maximum capacity and we have to resize the underlying array structure first? Then we allocate memory for 2N elements and then copy N elements over
+
+**Amortized time** takes into account a worst case that will happen time-to-time, but rarely.
+
+After X elements, we double the capacity from `1 -> 2 -> 4 -> 8 -> ... -> X`. That doubling takes respectively, `1, 2, 4, 8, 16, ..., X` copies. So up to X adds, we take `X + X/2 + X/4 + X/8 + ... + 1` time which is approximately `2X`.
+
+So X adds take `O(X)` time, the amortized time for adding each element is `O(1)`.
+
 ## Technical Questions
 
 ## The Offer and Beyond
