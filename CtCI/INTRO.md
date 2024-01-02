@@ -289,4 +289,54 @@ So X adds take `O(X)` time, the amortized time for adding each element is `O(1)`
 
 ## Technical Questions
 
+It's good practice to implement data structures and algorithms from scratch on paper, to get used to the
+whiteboard interview environment and drill in the fundamentals. Especially focus on hashtables.
+
+### Problem Solving
+
+Pay very close to attention to **the question** details:
+- are duplicates allowed
+- bounds of values
+- etc.
+Often all the details will be required for the optimal solution.
+
+Find **examples** to try to spot a pattern:
+- Special cases
+- Too small (most examples are 50% too small than useful)
+
+**Consider possiblities**:
+1. Bruteforce -- state it, explain why it's sub-optimal terrible, it's space and time complexity, and where it could possibly be optimised
+2. Optimise -- sometimes a fresh example helps to spot patterns
+  - unused information
+  - solve incorrectly and find exactly where your algorithm fails
+  - trade off space for time
+  - precompute some information
+
+Before diving into coding, ensure you fully understand your algorithm.
+
+For the implementation, try to make the solution as **beautiful** as possible:
+- Modularize code from the beginning it makes changes/refactors easier, and also allows you to skip certain functions until later.
+- Mid-code tests/assertions (even a TODO tag is good)
+- Clear variable names
+
+**Test** with **edge cases**, and other **special cases**, does the algorithm still work?
+- Test smaller bits of implemented functionality with smaller tests
+
+### BUD
+- Bottlenecks
+  - why improve the part of the algorithm that's O(N), when the other part of it is O(N log N)
+  - repeated work exists -- improve that algorithm to greatly improve efficiency
+- Unnecessary work
+  - Do we need to keep iterating if we have found a solution? Just break if not.
+- Duplicated work
+  - Won't improve on the scalability, but it can improve actual computation speed.
+
+### DIY
+
+Technique for optimising and solving.
+
+
 ## The Offer and Beyond
+
+
+
