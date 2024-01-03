@@ -359,3 +359,37 @@ Ensure that you check your code as you write it. Sprinkling in `assert` statemen
 
 ## The Offer and Beyond
 
+### Handling rejections and declining offers
+
+Most offers have acceptance deadlines; if that isn't enough time (waiting for other offers) you can ask for an extension. This will usually be accomodated.
+
+If you decline an offer, decline on good terms and keep the line of communication open. Make the decline with a reason that is **non-offensive** and **inarguable**.
+- Reject a big company by saying you think a startup is the right choice for you at the moment.
+
+When getting a rejection, explain that you are disappointed but understand the company's position. Ask when you can reapply, and for feedback on the interviews (what could I work on for next time?).
+
+### Evaluating an offer
+- Financial package is worth clearing up (Signing bonus + relocation, cost-of-living differences, average annual bonus, stock options and grants)
+- Career development -- you are likely to keep moving after a couple years
+  - How good does the company look on your resume?
+  - Will you develop relevant skills? Promotion plan?
+  - Will this company aid in your move into management? Does the company offer a realistic plan?
+  - Is the company/team growing?
+  - If I want to leave, is the company based near other potential company's?
+- Company stability
+- Happiness Factor
+
+### Negotiation
+
+- Just do it -- recruiters can't reject offers just because you negotiated
+- Viable alternatives -- you are more likely to be able to negotiate if you have other opportunities lined up that a company needs to compete with
+- Always have something you are gunning for -- specific demands are more likely to be met in your favour
+- Overshoot to start -- this way when the company meets you in the middle, you will still be satisfied
+- Not just salary -- stocks, maybe something more immediate is required, if you get given cash for relocation, then you may have some money spare
+- Do it over email if you are not as confident over the phone.
+
+### On the job
+- Set a timeline for what you want to achieve at the job and in the next ten years
+- Build strong relationships with manager and teammates, personal acquaintances could offer better job prospects
+- Ask for what you want -- perhaps a project with a more backend focus
+- Keep interviewing
