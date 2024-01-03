@@ -16,13 +16,12 @@ The coding exercises are put separate files based on the type of questions they 
 - Maths + Logic Puzzles
 - Recursion + Dynamic Programming
 - Sorting + Searching
-- Testing
+- Moderate
+- Hard
 
 The preamble of each file will explain the question and the category it belongs to so they can be sorted as required.
 
-I will be skipping the OO Design/Databases/System Design/C and C++/Java sections since this I am more interested in developing my problem solving skills under pressure/time constraint.
-
-I will also mix in some of the questions from the Moderate/Hard chapters (16 and 17 in the book's 6th edition).
+I will be skipping the OO Design/Testing/Databases/System Design/Threads and Locks/C and C++/Java sections since this I am more interested in developing my problem solving skills under pressure/time constraint.
 
 ## LeetCode
 
