@@ -331,12 +331,31 @@ For the implementation, try to make the solution as **beautiful** as possible:
 - Duplicated work
   - Won't improve on the scalability, but it can improve actual computation speed.
 
-### DIY
+### Best Conceivable Runtime
 
-Technique for optimising and solving.
+The BCR can offer a really helpful hint often. If you have two array inputs to a problem (`a` and `b`), you must have to at least touch each element in each array to ensure that you have found the most optimal solution. So the BCR is `O(A + B)`.
 
+The BCR is useful because it gives us a loose lower bound that we can't possibly do any better than, and we can work up from. As a result, if you need to do some precomputation, any of it done in less than the BCR runtime is essentially 'free' since it won't impact runtime.
+
+BCR also tells us when we are done optimising our algorithm for runtime, and can move onto optimising for space.
+
+If we manage to reach BCR runtime and `O(1)` additional space, we are completely done. Note that this may not be possible.
+
+### Good code
+
+- Correct -- it works as it should under the problem specification
+- Efficient -- it works as efficiently as possible with space and time in mind
+- Simple -- concise
+- Readable -- well-commented, fancy code should be pointed out and appropriately explained
+- Maintainable -- Adaptable
+
+It's good to use data structures generously. They are there to be used. If you can use an array instead of 5 separate values, use an array. Maybe you can even make a separate class for the inputs if it is useful.
+
+Ensure that your code is **modular** enough to allow for **appropriate code reuse**. Modularity also ensures that you don't have to implement everything as you figure out the algorithm, you can also just use a declared function and implement it later after you write the 'meaty' parts of the algorithm.
+
+Ensure that your code is flexible and robust. Generalising a problem to a structure with dimensions `N` is more impressive than hard-coding something where `N = 3`.
+
+Ensure that you check your code as you write it. Sprinkling in `assert` statements is a nice way to make inline checks happen.
 
 ## The Offer and Beyond
-
-
 
